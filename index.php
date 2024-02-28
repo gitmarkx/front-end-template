@@ -1,3 +1,5 @@
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/include/config.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no" />
 
-    <title>Front-end Template</title>
-    <meta name="description" content="front-end template" />
+    <title><? echo SITE_NAME ?></title>
+    <meta name="description" content="<? echo DESCRIPTION ?>" />
+	<meta name="keywords" content="<?php echo KEY_WORD ?>">
 
     <!-- OGP META TAGS -->
-    <meta property="og:title" content="front-end template">
-    <meta property="og:description" content="front-end template">
-    <meta property="og:image" content="front-end template">
-    <meta property="og:url" content="front-end template">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="<? echo OGP_TITLE; ?>">
+    <meta property="og:description" content="<? echo OGP_DESCRIPTION; ?>">
+    <meta property="og:url" content="<? echo OGP_URL; ?>">
+    <meta property="og:type" content="<? echo OGP_TYPE; ?>">
+    <meta property="og:image" content="/path/to/ogp/image">
 
     <!-- CSS LINK -->
     <link rel="stylesheet" href="/public/css/style.css">
