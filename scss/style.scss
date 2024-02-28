@@ -16,8 +16,16 @@
   Import Component SCSS Files:
   Individual imports for each component's styles.
 ============================================================*/
-@import 'components/header';
+@import 'components/heading';
 @import 'components/loading';
+@import 'components/container';
+
+/*==========================================================
+  Import Layout SCSS Files:
+  Individual imports for each layout's styles.
+============================================================*/
+@import 'layout/header';
+@import 'layout/footer';
 
 /*==========================================================
   Import Page SCSS Files:

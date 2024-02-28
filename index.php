@@ -24,7 +24,8 @@
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/include/layout/header.php') ?>
 
     <main>
-        <section><p class="header01">12</p></section>
+        <section style="width: 100%;height:100vh;">
+        </section>
     </main>
     
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/include/layout/footer.php') ?>
