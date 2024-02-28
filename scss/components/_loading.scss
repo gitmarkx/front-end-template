@@ -1,0 +1,20 @@
+#loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    /* 以下のコードを追加 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading.loaded {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}

@@ -1,0 +1,34 @@
+/*========================================================================================
+  Manually Add SCSS Files:
+  Ensure to manually add new SCSS files to the corresponding line in the 'sources' folder.
+  This section organizes imports for easier maintenance.
+=========================================================================================*/
+
+/*==========================================================
+  Import Core SCSS Files:
+  Centralized imports for core styles, variables, and mixins.
+============================================================*/
+@import 'core/variables';
+@import 'core/base';
+@import 'core/mixins';
+
+/*==========================================================
+  Import Component SCSS Files:
+  Individual imports for each component's styles.
+============================================================*/
+@import 'components/heading';
+@import 'components/loading';
+@import 'components/container';
+
+/*==========================================================
+  Import Layout SCSS Files:
+  Individual imports for each layout's styles.
+============================================================*/
+@import 'layout/header';
+@import 'layout/footer';
+
+/*==========================================================
+  Import Page SCSS Files:
+  Individual imports for each page's styles.
+============================================================*/
+@import 'pages/page1'

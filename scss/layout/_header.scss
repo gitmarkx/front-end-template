@@ -1,0 +1,117 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &.isActive{
+        .headerInner{
+            .menu-wrap{
+                .navWrap{
+                    left: 0;
+                }
+                #hamMenu{
+                    span{
+                        &::before{
+                            top: 5.5px;
+                            left: 0;
+                            transform: rotate(45deg);
+                        }
+                        &::after{
+                            bottom: 5px;
+                            left: 0;
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .headerInner{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .menu-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .navWrap{
+                @include sp{
+                    position: fixed;
+                    bottom: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: calc(100% - 48px);
+                    background-color: #fff;
+                    z-index: 50;
+                    transition: .3s ease-in-out;
+                }
+                &--list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+                &--item{
+                    margin: 0 20px 0 0;
+                    @include sp{
+                        width: 100%;
+                        margin: 0 0 20px 0;
+                        text-align: center;
+                    }
+                }
+            }
+            #hamMenu{
+                position: relative;
+                width: 40px;
+                height: 40px;
+                border: 1px solid;
+                border-radius: 2px;
+                cursor: pointer;
+                @include pc{
+                    display: none;
+                }
+                span{
+                    display: block;
+                    width: 25px;
+                    height: 12px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -90%);
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        border: 1px solid;
+                        background-color: #333;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transform: rotate(0);
+                        transition: .3s ease-in-out;
+                    }
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        border: 1px solid;
+                        background-color: #333;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transform: rotate(0);
+                        transition: .3s ease-in-out;
+                    }
+                }
+                p{
+                    font-size: 10px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

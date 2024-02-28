@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title><?php echo SITE_NAME; ?></title>
+    <title><?php echo SITE_NAME; ?> | Page 1</title>
     <!-- Header meta -->
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/include/header_meta.php') ?>
 
@@ -19,12 +19,13 @@
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/include/g-a.php') ?>
 
 </head>
-<body>
+<body id="page1">
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/include/layout/content-tag.php') ?>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/include/layout/header.php') ?>
 
     <main>
-        <section style="width: 100%;height:100vh;">
+        <section style="width: 100%;height:100vh;display:flex;align-items:center;justify-content:center;">
+            PAGE 1
         </section>
     </main>
     
