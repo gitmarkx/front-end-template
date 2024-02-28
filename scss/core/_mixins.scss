@@ -1,0 +1,30 @@
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+
+@mixin is-max($is-max) {
+    @media only screen and (max-width: $is-max) {
+        @content;
+    }
+}
+
+@mixin is-min($is-min) {
+    @media only screen and (min-width: $is-min) {
+        @content;
+    }
+}
+
+@mixin is-between($is-min, $is-max) {
+    @media only screen and (min-width: $is-min) and (max-width: $is-max) {
+        @content;
+    }
+}
